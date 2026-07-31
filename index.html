@@ -5,13 +5,15 @@
 h1{font-family:Futura,"Century Gothic",sans-serif;font-weight:500;letter-spacing:.02em}
 p.k{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c9a227;margin:0 0 22px}
 ul{list-style:none;padding:0;margin:40px 0 0}li{margin:0 0 18px;border-bottom:1px solid #241f1b;padding-bottom:18px}
-a{color:#f2ede4;text-decoration:none;font-size:20px}a:hover{color:#c9a227}</style>
+a{color:#f2ede4;text-decoration:none;font-size:20px}a:hover{color:#c9a227}.en{display:none}body.lang-en .ru{display:none}body.lang-en .en{display:revert}.lang-toggle{position:fixed;top:14px;right:14px;z-index:50;display:flex;gap:2px;background:rgba(0,0,0,.7);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:4px}.lang-toggle button{background:none;border:none;color:#b9b2a8;font:600 12px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.14em;padding:6px 12px;border-radius:16px;cursor:pointer}.lang-toggle button.active{color:#111;background:#c9a227}</style>
+<div class="lang-toggle"><button data-lang="ru">RU</button><button data-lang="en">EN</button></div>
 <div class="wrap"><p class="k">Street Series · Colombo, Sri Lanka</p><h1>Travel Log</h1>
 <ul>
-  <li><a href="beira-story.html">Беира на синем часе</a></li>
-  <li><a href="galleface-place.html">Ночь на Galle Face</a></li>
-  <li><a href="galleface-story.html">Unfinished Story — Galle Face</a></li>
-  <li><a href="gangaramaya-dark.html">Гангарамая — в темноте</a></li>
-  <li><a href="marine-drive.html">Подходы — Marine Drive</a></li>
-  <li><a href="pettah-story.html">Pettah — серия</a></li>
+  <li><a href="beira-story.html"><span class="ru">Беира на синем часе</span><span class="en">Beira at Blue Hour</span></a></li>
+  <li><a href="galleface-place.html"><span class="ru">Ночь на Galle Face</span><span class="en">Night on Galle Face</span></a></li>
+  <li><a href="galleface-story.html"><span class="ru">Unfinished Story — Galle Face</span><span class="en">Unfinished Story — Galle Face</span></a></li>
+  <li><a href="gangaramaya-dark.html"><span class="ru">Гангарамая — в темноте</span><span class="en">Gangaramaya — in the dark</span></a></li>
+  <li><a href="marine-drive.html"><span class="ru">Подходы — Marine Drive</span><span class="en">Approaches — Marine Drive</span></a></li>
+  <li><a href="pettah-story.html"><span class="ru">Pettah — серия</span><span class="en">Pettah — the series</span></a></li>
 </ul></div>
+<script>(function(){var b=document.querySelectorAll('.lang-toggle button');function set(l){document.body.className=(document.body.className.replace(/\blang-\w+\b/g,'')+' lang-'+l).trim();b.forEach(function(x){x.classList.toggle('active',x.getAttribute('data-lang')===l);});}b.forEach(function(x){x.addEventListener('click',function(){set(x.getAttribute('data-lang'));});});set('ru');})();</script>
